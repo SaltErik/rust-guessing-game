@@ -17,7 +17,7 @@ fn main() {
       .read_line(&mut input)
       .expect("ERROR: Failed to read line.");
 
-    let guess: u8 = match input.trim().parse::<u8>() {
+    let guess: u8 = match input.trim().parse() {
       Ok(num) => num,
       Err(_) => continue,
     };
